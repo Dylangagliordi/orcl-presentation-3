@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oracle (ORCL) Charts</title>
+<style>
+:root{--bg:#1c1714;--card:#32281f;--text:#f3ede4;--muted:#b9afa3;--accent:#e8715f}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 Inter,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:40px 16px}
+h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:40px;margin:0 0 6px}
+p{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border-radius:10px;padding:16px;color:var(--text);text-decoration:none;display:flex;flex-direction:column;gap:4px}
+.card:hover{outline:2px solid var(--accent)}
+.step{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.d{color:var(--muted);font-size:14px}
+</style></head><body><main>
+<h1>Oracle (ORCL): interactive charts</h1>
+<p>AN 306 Presentation 3 &middot; Logan Parker, Dylan Gagliordi, Nolan Brock &middot; Daily data Jan 2020 to Oct 14, 2026 (yfinance). Class exercise, not investment advice.</p>
+<div class="grid"><a class="card" href="charts/01_decomposition.html"><span class="step">Step 1</span><b>Yearly decomposition</b><span class="d">Trend, yearly seasonal and residual parts of the close.</span></a>
+<a class="card" href="charts/02_adf_raw_vs_diff.html"><span class="step">Step 1</span><b>ADF test: raw vs. differenced</b><span class="d">Raw close is non-stationary (p = 0.40); daily changes are stationary.</span></a>
+<a class="card" href="charts/03_acf_pacf.html"><span class="step">Step 1</span><b>ACF &amp; PACF</b><span class="d">Almost no short-term memory: a near random walk.</span></a>
+<a class="card" href="charts/04_volume.html"><span class="step">Step 2</span><b>Volume &amp; high-volume days</b><span class="d">The biggest volume days line up with earnings.</span></a>
+<a class="card" href="charts/05_moving_averages_crosses.html"><span class="step">Step 2</span><b>Moving averages, crosses &amp; outliers</b><span class="d">30/90/180-day averages, Golden/Death Crosses, 3-sigma and 5% days.</span></a>
+<a class="card" href="charts/06_backtest.html"><span class="step">Step 3</span><b>Backtest: AR(30) vs. SARIMAX</b><span class="d">120-day holdout, actual vs. predicted.</span></a>
+<a class="card" href="charts/07_forecast.html"><span class="step">Step 3</span><b>90-day forecast with 95% CI</b><span class="d">AR(30) and SARIMAX forecasts to Feb 2027.</span></a>
+<a class="card" href="charts/08_candlestick_events.html"><span class="step">Step 4</span><b>Annotated candlestick</b><span class="d">9 events, 20/50-day SMAs, volume, support &amp; resistance.</span></a>
+<a class="card" href="charts/09_peers_market_software.html"><span class="step">Step 4+</span><b>Oracle vs. market &amp; software</b><span class="d">QQQ, IGV, SAP rebased to 100.</span></a>
+<a class="card" href="charts/10_peers_ai_hardware_hyperscalers.html"><span class="step">Step 4+</span><b>Oracle vs. AI hardware &amp; hyperscalers</b><span class="d">SMH, Dell, Microsoft, Amazon.</span></a>
+<a class="card" href="charts/11_peers_ai_cloud.html"><span class="step">Step 4+</span><b>Oracle vs. AI cloud &amp; OpenAI exposure</b><span class="d">CoreWeave, Nebius, SoftBank.</span></a>
+<a class="card" href="charts/12_event_heatmap.html"><span class="step">Step 4+</span><b>Event-day heatmap</b><span class="d">Who moved with Oracle on each event day.</span></a>
+<a class="card" href="charts/13_event_scatter.html"><span class="step">Step 4+</span><b>Oracle vs. market on every day</b><span class="d">Event days against the beta line.</span></a>
+<a class="card" href="charts/14_rolling_correlation.html"><span class="step">Step 4+</span><b>Rolling correlation &amp; beta</b><span class="d">Who Oracle trades like, over time.</span></a>
+<a class="card" href="charts/15_earnings_band.html"><span class="step">Step 4+</span><b>Earnings-aware forecast band</b><span class="d">Risk jumps around each earnings report.</span></a>
+<a class="card" href="charts/16_full_story.html"><span class="step">Final</span><b>The full story, 2024-2026</b><span class="d">Primary reason for every key move, with event-study verdicts.</span></a></div></main></body></html>
